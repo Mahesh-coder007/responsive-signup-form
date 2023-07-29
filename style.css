@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  --primary-color: #78e08f;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+/* header {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 75px;
+  position: sticky;
+  top: 0px;
+}
+.logo h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.nav-bar {
+  display: flex;
+  place-items: center center;
+}
+.nav-bar li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+  margin: 0px 20px;
+} */
+h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+a:hover {
+  text-decoration: underline;
+}
+.small {
+  font-size: 80%;
+  text-align: center;
+}
+.split-screen {
+  display: flex;
+  flex-direction: column;
+}
+.left {
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(ryan-spencer-WJDR8_QxVR8-unsplash.jpg);
+  background-size: cover;
+}
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left .copy {
+  color: white;
+  text-align: center;
+  line-height: 0.5;
+}
+.left p {
+  font-weight: 400;
+}
+.right .copy {
+  color: black;
+  text-align: center;
+}
+.right .copy p {
+  margin: 1.5em 0;
+  font-size: 1rem;
+}
+.right form {
+  width: 328px;
+}
+form input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+  padding: 1em;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+.signup-btn {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  .split-screen {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .left,
+  .right {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+}
